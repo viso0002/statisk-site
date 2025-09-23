@@ -9,7 +9,7 @@
 
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 4;
+  grid-row: span 5;
   padding: 12px; 
   border-radius: 12px;
   background: #ffffff;
@@ -39,4 +39,17 @@
   font-size: 14px;
   color: #777;
   margin-bottom: -50px;
+}
+.discount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .discounted p:last-child {
+  background-color: red;
+} */
+
+.sold-out img {
+  opacity: 0%;
 }
