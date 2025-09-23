@@ -1,0 +1,12 @@
+body, main {
+    background-color: rgb(106, 104, 104);
+}
+
+@font-face {
+  font-family: 'britanica';
+  src: url('../fonts/Britanica-Regular\ Regular.ttf');
+}
+
+body {
+  font-family: 'britanica';
+}
