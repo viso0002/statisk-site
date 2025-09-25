@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/header.css" />
@@ -7,6 +7,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="js/product.js">
+      defer
+    </script> -->
     <title>Document</title>
   </head>
   <body>
@@ -22,33 +25,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="product-card">
-        <img src="assets/1531.webp" alt="Grey Solid Round Neck T-Shirt" />
-        <div class="product-info">
-          <h1>Grey Solid Round Neck T-Shirt</h1>
-          <h2>Color</h2>
-          <p class="info">Grey</p>
-          <h2>Brand</h2>
-          <p class="info">Puma</p>
-          <h2>Inventory number</h2>
-          <p class="info">1531</p>
-        </div>
-        <div class="purchase-box">
-          <form class="size">
-            <label>
-              Choose a size:
-              <select name="size">
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-              </select>
-            </label>
-          </form>
-          <button class="buy">PURCHASE</button>
-        </div>
-      </section>
-    </main>
+    <main id="productContainer"></main>
     <footer></footer>
+    <script src="js/product.js"></script>
   </body>
 </html>
