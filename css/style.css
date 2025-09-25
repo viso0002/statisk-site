@@ -49,9 +49,6 @@
   justify-content: space-between;
 }
 
-/* .discounted p:last-child {
-  background-color: red;
-} */
 
 
 .old-price {
@@ -134,4 +131,31 @@
 
 .size {
   padding: 40px;
+}
+
+
+@media (max-width: 768px) {
+   .product-card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "info"
+      "purchase";
+    gap: 16px;
+    margin: 24px 16px;
+    padding: 16px;
+  }
+
+  .product-card > img {
+     max-width: 100%; justify-self: center; 
+    }
+
+  .product-info h2 { 
+    font-size: 16px; 
+  }
+  .size {
+  padding: 20px; 
+}
+.buy {
+  margin-bottom: 40px;
+}           
 }
