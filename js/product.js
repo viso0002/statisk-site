@@ -6,7 +6,9 @@ const id = params.get("id");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
 .then((res) => res.json())
-.then((product) => {
+.then(showProduct) 
+    
+function showProduct(product) {
     // console.log(product.articletype);
 
 productContainer.innerHTML = `<section class="product-card">
@@ -40,4 +42,4 @@ productContainer.innerHTML = `<section class="product-card">
         </div>
       </section>`;
 
-      });
+      };
