@@ -1,4 +1,4 @@
-.grid-container {
+.productlist main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
@@ -6,7 +6,6 @@
   background-color: rgb(106, 104, 104);
 }
 .grid-item { 
-
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 5;
@@ -81,6 +80,7 @@
 
 .product-info {
   align-content: center;
+  padding: 40px;
 }
 
 .product-info h2 {

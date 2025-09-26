@@ -6,7 +6,7 @@ const id = params.get("id");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
 .then((res) => res.json())
-.then(productlist => showProduct(productlist)) 
+.then(data => showProduct(data)) 
     
 function showProduct(product) {
     // console.log(product.articletype);
