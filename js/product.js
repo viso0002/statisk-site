@@ -13,7 +13,7 @@ productContainer.innerHTML = `<section class="product-card">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" 
         alt="Grey Solid Round Neck T-Shirt" />
         <div class="product-info">
-          <h1>Grey Solid Round Neck T-Shirt</h1>
+          <h1>${product.productdisplayname}</h1>
           <h2>Color</h2>
           <p class="info">${product.basecolour}</p>
           <h2>Brand</h2>
