@@ -42,7 +42,7 @@
 }
 
 
-.new-price {
+.discounted {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,19 +50,20 @@
 
 
 
-.old-price {
+/* .price {
   color: #777;
   text-decoration: line-through;
-}
+} */
 
-.new-price {
+.discounted {
   margin-top: -50px;
 }
 
-.discount {
+.discounted p:last-child {
   background-color: black;
   color: #ffffff;
 }
+
 
 .product-card {
   background-color: #ffffff;
@@ -104,23 +105,25 @@
   cursor: pointer;
 }
 
-.sold-out {
+.grid-item.soldOut {
   position: relative;
-  opacity: 0.5;  
+  opacity: 0.5; 
+  pointer-events: none; 
 }
 
-.sold-out::after {
-  content: "UDSOLGT";
+.grid-item.soldOut::after {
+  content: "SOLD OUT";
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.7);
+  background: black;
   color: #fff;
-  font-size: 20px;
-  padding: 6px 12px;
-  border-radius: 6px;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
+
 
 .purchase-box {
   align-content: center;

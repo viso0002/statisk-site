@@ -9,17 +9,30 @@ function showProducts(products) {
 
   products.forEach(element => {
     console.log(element); 
+    
+    
 
-    productListContainer.innerHTML += `
-      <div class="grid-item">
-        <a href="product.html?id=${element.id}">
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" 
-               alt="${element.productdisplayname}" />
-        </a>
-        <h3>${element.productdisplayname}</h3>
-        <p class="sub-title">${element.brandname}</p>
-        <p class="price">${element.price} DKK</p>
-      </div>`;
+    let discountHTML = "";
+if (element.discount) {
+  discountHTML = `
+    <div class="discounted">
+      <p>DKK <span>${Math.round(element.price - (element.price * element.discount) / 100)}</span></p>
+      <p><span>${element.discount}</span>%</p>
+    </div>`;
+}
+
+productListContainer.innerHTML += `
+  <div class="grid-item ${element.soldout && "soldOut"} ${element.discount && "onSale"}">
+    <a href="product.html?id=${element.id}">
+      <img src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" 
+           alt="${element.productdisplayname}" />
+    </a>
+    <h3>${element.productdisplayname}</h3>
+    <p class="sub-title">${element.brandname}</p>
+    <p class="price">DKK <span>${element.price}</span></p>
+    ${discountHTML}
+  </div>`;
+
   });
 }
 

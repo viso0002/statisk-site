@@ -12,8 +12,7 @@ function showProduct(product) {
     // console.log(product.articletype);
 
 productContainer.innerHTML = `<section class="product-card">
-        <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" 
-        alt="Grey Solid Round Neck T-Shirt" />
+        <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" />
         <div class="product-info">
           <h1>${product.productdisplayname}</h1>
           <h2>Color</h2>
