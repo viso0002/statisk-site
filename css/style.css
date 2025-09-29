@@ -136,6 +136,12 @@
   padding: 40px;
 }
 
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+}
 
 @media (max-width: 768px) {
    .product-card {
