@@ -19,7 +19,8 @@
 }
 
 .hero-buttons {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -48,7 +49,14 @@ header {
     font-size: 42px;
   }
   .hero-buttons {
+    display: flex;
     flex-direction: column;
     gap: 12px;
   }
+
+  .hero-content img {
+    max-width: 300px;
+    height: auto;
+}
+
 }
