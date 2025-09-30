@@ -143,6 +143,27 @@ h2 {
   padding-top: 30px;
 }
 
+#filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#filters button {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+#filters button:hover {
+  background: #88aece;
+  color: white;
+}
+
 @media (max-width: 768px) {
    .product-card {
     grid-template-columns: 1fr;

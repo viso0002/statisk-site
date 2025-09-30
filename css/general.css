@@ -7,6 +7,6 @@ body, main {
   src: url('../fonts/Britanica-Regular\ Regular.ttf');
 }
 
-body {
+body, button {
   font-family: 'britanica';
 }
