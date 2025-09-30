@@ -136,7 +136,7 @@
   padding: 40px;
 }
 
-h2 {
+.productlist h2 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -152,15 +152,16 @@ h2 {
 #filters button {
   padding: 12px 28px;
   border-radius: 30px;
-  background: white;
-  color: black;
+  background: #88aece;
+  color: white;
   font-size: 16px;
   font-weight: 500;
   border: none;
+  cursor: pointer;
 }
 
 #filters button:hover {
-  background: #88aece;
+  background: #424981;
   color: white;
 }
 

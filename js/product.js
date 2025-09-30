@@ -15,13 +15,13 @@ productContainer.innerHTML = `<section class="product-card">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" />
         <div class="product-info">
           <h1>${product.productdisplayname}</h1>
-          <h2>Color</h2>
+          <h2 class="display-h2">Color</h2>
           <p class="info">${product.basecolour}</p>
-          <h2>Brand</h2>
+          <h2 class="display-h2">Brand</h2>
           <p class="info">${product.brandname}</p>
-          <h2>Category</h2>
+          <h2 class="display-h2">Category</h2>
           <p class="info">${product.category}</p>
-          <h2>Inventory number</h2>
+          <h2 class="display-h2">Inventory number</h2>
           <p class="info">${product.id}</p>
         </div>
         <div class="purchase-box">
